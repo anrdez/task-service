@@ -27,10 +27,15 @@ public class Task {
     @Column(nullable = false)
     private String description;
 
+
+    /**
+     * When you use TemporalType.TIMESTAMP in the @Temporal annotation,
+     * it means that both the date and time information will be stored
+     * in the database.
+     */
     @Column(nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
-    private Date creationDate;
-
+    private Date createdAt;
 
 
 }

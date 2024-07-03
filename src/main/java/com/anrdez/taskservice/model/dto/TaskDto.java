@@ -23,5 +23,5 @@ public class TaskDto {
 
     private String description;
 
-    private Date creationDate;
+    private Date createdAt;
 }
