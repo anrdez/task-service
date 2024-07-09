@@ -16,6 +16,7 @@ public interface TaskApi {
     @PostMapping
     ResponseEntity<TaskDto> createTask(@RequestBody TaskDto dto);
 
+    @GetMapping
     ResponseEntity<List<TaskDto>> getAll();
 
     @GetMapping("/{id}")
