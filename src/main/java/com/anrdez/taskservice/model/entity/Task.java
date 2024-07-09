@@ -24,7 +24,7 @@ public class Task {
     @Column(nullable = false)
     private String title;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 500)
     private String description;
 
 
@@ -33,7 +33,7 @@ public class Task {
      * it means that both the date and time information will be stored
      * in the database.
      */
-    @Column(nullable = false)
+    @Column(nullable = false, updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdAt;
 
